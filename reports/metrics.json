@@ -1,0 +1,34 @@
+{
+  "data_source": "/Users/parthsoni/Desktop/credit-default-risk-predictor/data/sample_credit_data.csv",
+  "n_rows": 30000,
+  "default_rate": 0.17296666666666666,
+  "class_weight": "balanced",
+  "test_size": 0.2,
+  "models": {
+    "Logistic Regression": {
+      "metrics": {
+        "accuracy": 0.7058,
+        "precision": 0.3299,
+        "recall": 0.6792,
+        "f1": 0.4441,
+        "roc_auc": 0.7585
+      },
+      "best_params": {
+        "clf__C": 10
+      }
+    },
+    "Decision Tree": {
+      "metrics": {
+        "accuracy": 0.7163,
+        "precision": 0.3332,
+        "recall": 0.6387,
+        "f1": 0.4379,
+        "roc_auc": 0.749
+      },
+      "best_params": {
+        "clf__max_depth": 3,
+        "clf__min_samples_leaf": 20
+      }
+    }
+  }
+}
